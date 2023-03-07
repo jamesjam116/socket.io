@@ -13,12 +13,12 @@
         #form {
             background: rgba(0, 0, 0, 0.15);
             padding: 0.25rem;
-            position: fixed;
+            position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
             display: flex;
-            height: 3rem;
+            height: 10rem;
             box-sizing: border-box;
             backdrop-filter: blur(10px);
         }
@@ -64,7 +64,7 @@
 <body>
     <ul id="messages"></ul>
     <form id="form" action="">
-        <input id="input" autocomplete="off" /><button>Send</button>
+        <input id="input" autocomplete="off" /><button>Send message</button>
     </form>
 </body>
 <script src="/socket.io/socket.io.js"></script>
